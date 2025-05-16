@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu Lateral</title>
+    <style>
+        * {
+            font-family: Arial, sans-serif; /*TIPO DE FONTE*/
+            margin: 0; /*ESPACO DE MARGEM DA PÁGINA*/
+            padding: 0; /*DISTÂNCIA ENTRE CONTEÚDO E BORDAS*/
+        }
+
+        nav {
+            background-color: #333; /*COR DO FUNDO*/
+            color: white; /*COR DA LETRA*/
+            width: 250px; /*LARGURA TOTAL DO MENU*/
+            height: 100vh; /*ALTURA TOTAL DO MENU*/
+            position: fixed; /*O ELEMENTO FICARÁ FIXO NA TELA - À ESQUERDA DA PÁGINA*/
+            top: 0; /*GARANTE QUE O NAV FICARÁ SEMPRE ALINHADO AO TOPO*/
+            left: 0; /*GARANTE QUE O NAV FICARÁ SEMPRE ALINHADO À ESQUERDA*/
+        }
+
+        nav ul {
+            list-style: none; /*RETIRA O ÍCONE DO ITEM DE LISTA*/
+        }
+
+        nav li {
+            padding: 15px; /*ESPACAMENTO INTERNO AO REDOR DO TEXTO*/
+            text-align: center; /*CENTRALIZA O TEXTO DENTRO DA LI*/
+        }
+
+        nav li:hover {
+            background-color: #575757; /*MUDA A COR DO FUNDO AO PASSAR POR CIMA*/
+        }
+
+        nav li a {
+            color: white; /*COR DO TEXTO BRANCA*/
+            text-decoration: none; /*RETIRA O SUBLINHADO DO LINK*/
+            display: block;
+            padding: 20px; /*ESPACAMENTO INTERNO GARANTINDO O CONTEÚDO NÃO FIQUE COLADO NAS BORDAS*/
+        }
+
+        main {
+            margin-left: 250px; /*DISTÂNCIA EVITANDO QUE O CONTEÚDO FIQUE ATRÁS DO MENU*/
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!--MENU LATERAL-->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    <!--CONTEÚDO DA PÁGINA-->
+    <main>
+        <h1>Bem-vindo ao nosso site!</h1>
+        <p>Aqui você encontra informações sobre nossos serviços.</p>
+    </main>
+</body>
+</html>
