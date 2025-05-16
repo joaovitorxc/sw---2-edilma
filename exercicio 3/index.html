@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu Superior</title>
+    <style>
+        * {
+            font-family: Arial, sans-serif; /* TIPO DE FONTE */
+            margin: 0; /* ESPAÇO DE MARGEM DA PÁGINA */
+            padding: 0; /* DISTÂNCIA ENTRE CONTEÚDO E BORDAS */
+        }
+
+        nav {
+            background-color: #333; /* COR DE FUNDO */
+            color: white; /* COR DA LETRA */
+            width: 100%; /* LARGURA TOTAL DO MENU */
+            height: 55px; /* ALTURA DO MENU */
+            position: fixed; /* O ELEMENTO FICARÁ FIXO NA TELA - NO TOPO DA PÁGINA */
+            top: 0; /* GARANTE QUE O NAV FICARÁ SEMPRE ALINHADO AO TOPO */
+            left: 0; /* GARANTE QUE O NAV FICARÁ SEMPRE ALINHADO À ESQUERDA */
+            display: flex; /* ORGANIZAR OS ITENS AO CENTRO DA PÁGINA */
+            justify-content: space-around; /* ESPAÇO IGUAL ENTRE OS ITENS */
+            align-items: center; /* ALINHAR OS ITENS NA VERTICAL AO MEIO */
+        }
+
+        nav ul {
+            list-style: none; /* RETIRA O ÍCONE DE ITEM DA LISTA */
+            display: flex; /* TRANSFORMAR A LISTA VERTICAL EM HORIZONTAL */
+        }
+
+        nav li {
+            padding: 15px; /* ESPAÇAMENTO INTERNO AO REDOR DO TEXTO */
+            text-align: center; /* CENTRALIZA O TEXTO DENTRO DA LI */
+        }
+
+        nav li:hover {
+            background-color: #575575; /* MUDA A COR DE FUNDO AO PASSAR POR CIMA */
+        }
+
+        nav a {
+            color: white; /* COR DO TEXTO BRANCA */
+            text-decoration: none; /* RETIRA O SUBLINHADO DE LINK */
+        }
+
+        main {
+            padding: 20px; /* ESPAÇAMENTO INTERNO GARANTINDO QUE O CONTEÚDO NÃO FIQUE COLADO NAS BORDAS */
+            margin-top: 55px; /* DISTÂNCIA EVITANDO QUE O CONTEÚDO FIQUE ATRÁS DO MENU */
+        }
+    </style>
+</head>
+<body>
+    <!-- MENU SUPERIOR -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#portifolio">Portifólio</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTEÚDO DA PÁGINA -->
+    <main>
+        <h1>Bem-vindo ao nosso site!</h1>
+        <p>Aqui você encontra informações sobre nossos serviços.</p>
+    </main>
+</body>
+</html>
